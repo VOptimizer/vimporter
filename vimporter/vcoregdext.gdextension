@@ -1,0 +1,9 @@
+[configuration]
+
+entry_symbol = "VCoreGDExtensionEntry"
+compatibility_minimum = "4.2"
+
+[libraries]
+
+windows.debug.x86_64 = "res://addons/vimporter/libvcoregdext.dll"
+windows.release.x86_64 = "res://addons/vimporter/libvcoregdext.dll"
