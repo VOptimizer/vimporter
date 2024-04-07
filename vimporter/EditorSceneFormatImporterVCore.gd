@@ -47,8 +47,9 @@ func _import_scene(path: String, flags: int, options: Dictionary) -> Object:
 					if !animation:
 						# Check and track the name.
 						if nameCounter.has(name):
+							var oldname := name
 							name += str(nameCounter[name])
-							nameCounter[name] += 1
+							nameCounter[oldname] += 1
 						else:
 							nameCounter[name] = 1
 					
